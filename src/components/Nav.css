@@ -1,0 +1,21 @@
+/* Tailwind CSS Utilities used in the Logo */
+.logo-icon {
+  /* Circular gradient for the logo background */
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  border-radius: 9999px;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: 0.875rem; /* text-sm */
+}
+
+.text-gradient {
+  /* Gradient text effect */
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

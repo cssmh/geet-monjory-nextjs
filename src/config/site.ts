@@ -9,61 +9,48 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Gallery",
+      href: "/gallery",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Monjory",
+      href: "/monjory",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Videos",
+      href: "/videos",
     },
     {
-      label: "About",
-      href: "/about",
+      label: "About Us",
+      href: "/about-us",
     },
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Home",
+      href: "/",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Gallery",
+      href: "/gallery",
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: "Monjory",
+      href: "/monjory",
     },
     {
-      label: "Team",
-      href: "/team",
+      label: "Videos",
+      href: "/videos",
     },
     {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "About Us",
+      href: "/about-us",
     },
   ],
   links: {
-    github: "https://github.com/heroui-inc/heroui",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    facebook: "https://www.facebook.com/saju1976",
+    twitter: "https://twitter.com/yourprofile",
+    instagram: "https://instagram.com/yourprofile",
+    youtube: "https://www.youtube.com/@geetmonjory8955",
   },
 };

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable import/order */
 /* eslint-disable react/jsx-sort-props */
 import {
@@ -23,7 +24,7 @@ import {
   FaYoutube as YouTubeIcon,
 } from "react-icons/fa";
 import { TwitterIcon } from "./icons";
-
+import HyperText from "./ui/hyper-text";
 
 export const Navbar = () => {
   return (
@@ -36,13 +37,12 @@ export const Navbar = () => {
               <div className="logo-icon bg-gradient-to-r from-blue-500 to-purple-500 rounded-full h-8 w-8 flex items-center justify-center text-white font-bold text-sm">
                 GM
               </div>
-              <p className="font-bold text-xl md:text-3xl text-gradient bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-                Geet Monjory
-              </p>
+              <h1 className="font-bold text-2xl md:text-3xl text-gradient bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+                <HyperText>Geet Monjory</HyperText>
+              </h1>
             </div>
           </NextLink>
         </NavbarBrand>
-        {/* Navigation Items */}
         <ul className="hidden lg:flex gap-7 ml-4">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
@@ -59,8 +59,6 @@ export const Navbar = () => {
           ))}
         </ul>
       </NavbarContent>
-
-      {/* Right Section: Social Icons and Theme Switch */}
       <NavbarContent
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"

@@ -19,7 +19,7 @@ export default function ExploreUtube() {
           inspire, heal, and bring joy.
         </p>
         <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-5 md:gap-12">
-          <div className="w-full lg:w-1/3 rounded-lg shadow-lg">
+          <div className="w-full lg:w-1/3 rounded-lg shadow-lg p-5">
             <h2 className="text-2xl font-semibold text-center mb-3">
               Join the Melody
             </h2>
@@ -38,7 +38,7 @@ export default function ExploreUtube() {
             </div>
           </div>
           <div className="w-full lg:w-2/3">
-            <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
+            <div className="relative pb-[56.25%] h-0 overflow-hidden border rounded-lg shadow-lg">
               <iframe
                 allowFullScreen
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

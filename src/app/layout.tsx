@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import "@/src/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
@@ -38,15 +39,13 @@ export default function RootLayout({
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
+          fontSans.variable
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
-            <main className="container mx-auto max-w-7xl px-3 flex-grow">
-              {children}
-            </main>
+            <main>{children}</main>
             <Footer />
           </div>
         </Providers>

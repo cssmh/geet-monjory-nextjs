@@ -15,33 +15,31 @@ const albums = [
 
 export default function MeetUs() {
   return (
-    <div>
-      <section className="my-4 md:my-8">
-        <div className="text-center">
-          <h2 className="text-3xl font-bold text-gradient">Meet Our Team</h2>
-          <p className="mt-4 text-base md:text-lg md:w-[60%] mx-auto text-gray-600 dark:text-white">
-            Get to know the talented team behind Geet Monjory&lsquo;s music, and
-            discover the amazing places we’ve visited that inspired our latest
-            releases.
-          </p>
-        </div>
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {albums.map((album, index) => (
-            <div key={index} className="rounded-lg shadow-lg">
-              <div className="w-full h-56 relative overflow-hidden rounded-lg mb-4">
-                <Image
-                  alt={`Album ${index + 1}`}
-                  className="object-cover w-full h-full"
-                  height={240}
-                  src={album.image}
-                  width={400}
-                />
-              </div>
-              <h3 className="text-sm text-center">{album.name}</h3>
+    <section className="mb-5">
+      <div className="text-center">
+        <h2 className="text-3xl font-bold text-gradient">Meet Our Team</h2>
+        <p className="mt-4 text-base md:text-lg md:w-[60%] mx-auto text-gray-600 dark:text-white">
+          Get to know the talented team behind Geet Monjory&lsquo;s music, and
+          discover the amazing places we’ve visited that inspired our latest
+          releases.
+        </p>
+      </div>
+      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {albums.map((album, index) => (
+          <div key={index} className="rounded-lg shadow-lg">
+            <div className="w-full h-56 relative overflow-hidden rounded-lg mb-4">
+              <Image
+                alt={`Album ${index + 1}`}
+                className="object-cover w-full h-full"
+                height={240}
+                src={album.image}
+                width={400}
+              />
             </div>
-          ))}
-        </div>
-      </section>
-    </div>
+            <h3 className="text-sm text-center pb-3">{album.name}</h3>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }

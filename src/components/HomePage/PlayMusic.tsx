@@ -45,8 +45,8 @@ const MusicPlayer = () => {
   if (!isMounted) return null;
 
   return (
-    <div>
-      <div className="shadow-md rounded-lg overflow-hidden my-6">
+    <div className="flex flex-col md:flex-row gap-3 my-6">
+      <div className="w-full md:w-1/2 shadow-md rounded-lg overflow-hidden">
         <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-3">
           <h2 className="text-lg md:text-2xl font-semibold flex items-center justify-center gap-2">
             <FaMusic className="text-xl" />
@@ -94,11 +94,13 @@ const MusicPlayer = () => {
           </button>
         </div>
       </div>
-      <VelocityScroll>
-        {selectedMusic === "/ami_parina.mp3"
-          ? "Ami Parina r paina"
-          : "Bondhu Kotha Koiyo Na"}
-      </VelocityScroll>
+      <div className="w-full md:w-1/2">
+        <VelocityScroll>
+          {selectedMusic === "/ami_parina.mp3"
+            ? "আমি পারিনা আর পারিনা আমি কেনো মরিনা আজরাইল কি চিনে না আমারে রে"
+            : "১২ মাসে ১২ ফুল রে ফুইট্টা থাকে ডালে রে এই পন্থে আইসে, নাগর পড়তি সন্ধ্যা  কালে রে দেখিতে সোনার নাগর গো চান্দের সমান"}
+        </VelocityScroll>
+      </div>
     </div>
   );
 };

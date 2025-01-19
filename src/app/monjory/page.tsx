@@ -7,14 +7,16 @@ export default function Monjory() {
     <div className="py-6 px-5">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-2xl md:text-3xl font-extrabold">Geet Monjory</h1>
-        <p className="mt-4 text-lg">
+        <p className="mt-4 dark:text-white text-lg">
           The visionary behind this platform, blending passion, music, and words
           into timeless creations.
         </p>
       </div>
       <div className="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div>
-          <h2 className="text-2xl font-semibold mb-4">Meet Geet Monjory</h2>
+          <h2 className="text-2xl text-[#9333ea] font-semibold mb-4">
+            Meet Geet Monjory
+          </h2>
           <p className="leading-relaxed">
             Geet Monjory, a celebrated author and music enthusiast, has
             redefined storytelling through books and melodies. With years of
@@ -22,7 +24,7 @@ export default function Monjory() {
             tunes, Geet Monjory has created a space where words and music come
             together to inspire generations.
           </p>
-          <p className="mt-4 leading-relaxed">
+          <p className="mt-4 dark:text-white leading-relaxed">
             This platform is a tribute to creativity, where you can explore Geet
             Monjory’s works and join a vibrant community of music lovers and
             readers.
@@ -53,7 +55,7 @@ export default function Monjory() {
         <h3 className="text-2xl font-semibold mb-4">
           Explore the Works of Geet Monjory
         </h3>
-        <p>
+        <p className="dark:text-white">
           Dive into a world of captivating stories and enchanting melodies.
           Discover what makes Geet Monjory a legend in the realm of music and
           literature.

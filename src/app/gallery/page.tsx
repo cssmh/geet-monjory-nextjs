@@ -12,6 +12,7 @@ import img9 from "@/src/assets/img7.jpg";
 import img10 from "@/src/assets/img8.jpg";
 import img11 from "@/src/assets/img9.jpg";
 import img12 from "@/src/assets/img10.jpg";
+import { MagicCard } from "@/src/components/ui/magic-card";
 
 export default function GalleryPage() {
   const images = [
@@ -37,13 +38,15 @@ export default function GalleryPage() {
             key={index}
             className="mb-4 transform transition-transform hover:scale-105"
           >
-            <Image
-              alt={`Gallery Image ${index + 1}`}
-              className="w-full rounded-lg shadow-lg"
-              height={200}
-              src={image}
-              width={300}
-            />
+            <MagicCard>
+              <Image
+                alt={`Gallery Image ${index + 1}`}
+                className="w-full rounded-lg shadow-lg"
+                height={200}
+                src={image}
+                width={300}
+              />
+            </MagicCard>
           </div>
         ))}
       </div>

@@ -67,6 +67,6 @@ module.exports = {
   		}
   	}
   },
-  darkMode: ["class", 'class'],
+  darkMode: ["class"],
   plugins: [heroui(), require("tailwindcss-animate")],
 }

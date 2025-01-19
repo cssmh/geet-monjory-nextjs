@@ -5,7 +5,7 @@
 import { motion } from "framer-motion";
 export default function ExploreUtube() {
   return (
-    <div className="my-8 md:my-16 px-3 text-center">
+    <div className="mt-8 md:my-16 px-3 text-center">
       <motion.div
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
@@ -18,7 +18,7 @@ export default function ExploreUtube() {
           Immerse yourself in soulful tunes and captivating melodies that
           inspire, heal, and bring joy.
         </p>
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-5 md:gap-12">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-3 md:gap-12">
           <div className="w-full lg:w-1/3 rounded-lg shadow-lg p-5">
             <h2 className="text-2xl font-semibold text-center mb-3">
               Join the Melody
@@ -30,7 +30,7 @@ export default function ExploreUtube() {
             </p>
             <div className="flex justify-center">
               <a
-                className="px-8 py-3 bg-violet-600 text-white hover:bg-violet-700 font-medium rounded-lg transition ease-in-out duration-300"
+                className="px-4 md:px-8 py-2 md:py-3 bg-violet-600 text-white hover:bg-violet-700 font-medium rounded-lg transition ease-in-out duration-300"
                 href="https://www.youtube.com/@geetmonjory8955"
               >
                 Explore More

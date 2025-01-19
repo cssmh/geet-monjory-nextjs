@@ -1,6 +1,4 @@
-/* Tailwind CSS Utilities used in the Logo */
 .logo-icon {
-  /* Circular gradient for the logo background */
   background: linear-gradient(to right, #3b82f6, #9333ea);
   border-radius: 9999px;
   height: 2rem;
@@ -10,7 +8,7 @@
   justify-content: center;
   font-weight: bold;
   color: white;
-  font-size: 0.875rem; /* text-sm */
+  font-size: 0.875rem;
 }
 
 .text-gradient {

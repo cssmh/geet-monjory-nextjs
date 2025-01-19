@@ -1,28 +1,33 @@
-import { Snippet } from "@heroui/snippet";
-import { Code } from "@heroui/code";
+import Image from "next/image";
 
+import singer from "@/src/assets/geetmonjory.jpg";
 import { title, subtitle } from "@/src/components/primitives";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title()}>Make&nbsp;</span>
-        <span className={title({ color: "violet" })}>beautiful&nbsp;</span>
+    <section className="flex flex-col md:flex-row items-center justify-between gap-8 py-8 md:py-10">
+      <div className="text-center md:text-left max-w-xl">
+        <span className={title()}>Welcome to&nbsp;</span>
+        <span className={title({ color: "violet" })}>
+          Geet Monjory&apos;s&nbsp;
+        </span>
         <br />
         <span className={title()}>
-          websites regardless of your design experience.
+          Official Website – Explore new music, albums, and more!
         </span>
-        <div className={subtitle({ class: "mt-4" })}>
-          Beautiful, fast and modern React UI library.
+        <div className={subtitle({ class: "mt-3" })}>
+          Discover the latest tracks and stay up-to-date with Geet
+          Monjory&apos;s musical journey.
         </div>
       </div>
-      <div className="mt-8">
-        <Snippet hideCopyButton hideSymbol variant="bordered">
-          <span>
-            Get started by editing <Code color="primary">app/page.tsx</Code>
-          </span>
-        </Snippet>
+      <div className="mt-8 md:mt-0 w-full md:w-1/2">
+        <Image
+          alt="Singer"
+          className="w-full rounded-lg shadow-lg"
+          height={200}
+          src={singer}
+          width={300}
+        />
       </div>
     </section>
   );

@@ -32,7 +32,6 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-2" href="/">
-            {/* CSS-based logo */}
             <div className="logo flex items-center gap-2">
               <div className="logo-icon bg-gradient-to-r from-blue-500 to-purple-500 rounded-full h-8 w-8 flex items-center justify-center text-white font-bold text-sm">
                 GM
@@ -44,7 +43,7 @@ export const Navbar = () => {
           </NextLink>
         </NavbarBrand>
         {/* Navigation Items */}
-        <ul className="hidden lg:flex gap-6 ml-4">
+        <ul className="hidden lg:flex gap-7 ml-4">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
@@ -66,8 +65,7 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="flex gap-3">
-          {/* Facebook Icon */}
+        <NavbarItem className="flex items-center gap-3">
           <Link
             isExternal
             aria-label="Facebook"
@@ -75,27 +73,19 @@ export const Navbar = () => {
           >
             <FacebookIcon className="text-default-500 hover:text-blue-600 transition-colors duration-200" />
           </Link>
-
-          {/* Twitter Icon */}
-          <Link isExternal aria-label="Twitter" href={siteConfig.links.twitter}>
-            <TwitterIcon className="text-default-500 hover:text-blue-500 transition-colors duration-200" />
+          <Link isExternal aria-label="YouTube" href={siteConfig.links.youtube}>
+            <YouTubeIcon className="text-default-500 text-xl hover:text-red-500 transition-colors duration-200" />
           </Link>
-
-          {/* Instagram Icon */}
           <Link
             isExternal
             aria-label="Instagram"
             href={siteConfig.links.instagram}
           >
-            <InstagramIcon className="text-default-500 hover:text-pink-500 transition-colors duration-200" />
+            <InstagramIcon className="text-default-500 text-lg hover:text-pink-500 transition-colors duration-200" />
           </Link>
-
-          {/* YouTube Icon */}
-          <Link isExternal aria-label="YouTube" href={siteConfig.links.youtube}>
-            <YouTubeIcon className="text-default-500 hover:text-red-500 transition-colors duration-200" />
+          <Link isExternal aria-label="Twitter" href={siteConfig.links.twitter}>
+            <TwitterIcon className="text-default-500 hover:text-blue-500 transition-colors duration-200" />
           </Link>
-
-          {/* Theme Switch */}
           <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>

@@ -6,7 +6,7 @@ import { title, subtitle } from "@/src/components/primitives";
 
 export default function GeetMonjory() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between gap-8 py-8 md:py-10">
+    <section className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-8 py-7 md:py-10">
       <div className="text-center md:text-left max-w-xl">
         <span className={title()}>Welcome to&nbsp;</span>
         <span className={title({ color: "violet" })}>

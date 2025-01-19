@@ -29,7 +29,6 @@ import HyperText from "./ui/hyper-text";
 export const Navbar = () => {
   return (
     <HeroUINavbar className="py-1" maxWidth="xl" position="sticky">
-      {/* Left Section: Brand Logo */}
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-2" href="/">

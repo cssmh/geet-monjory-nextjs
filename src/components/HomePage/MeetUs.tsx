@@ -16,7 +16,7 @@ const albums = [
 export default function MeetUs() {
   return (
     <div>
-      <section className="py-8">
+      <section className="my-4 md:my-8">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gradient">Meet Our Team</h2>
           <p className="mt-4 text-base md:text-lg md:w-[60%] mx-auto text-gray-600 dark:text-white">

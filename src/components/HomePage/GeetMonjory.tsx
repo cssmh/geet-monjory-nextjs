@@ -3,7 +3,6 @@ import Image from "next/image";
 
 import singer from "@/src/assets/geetmonjory.jpg";
 import { title, subtitle } from "@/src/components/primitives";
-
 export default function GeetMonjory() {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-8 py-7 md:py-10">
@@ -21,7 +20,7 @@ export default function GeetMonjory() {
           Monjory&apos;s musical journey.
         </div>
       </div>
-      <div className="mt-8 md:mt-0 w-full md:w-1/2">
+      <div className="mt-4 md:mt-0 w-full md:w-1/2">
         <Image
           alt="Singer"
           className="w-full rounded-lg shadow-lg"

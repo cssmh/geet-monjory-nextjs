@@ -4,7 +4,7 @@
 /* eslint-disable prettier/prettier */
 const Footer = () => {
   return (
-    <footer className="border-t border-neutral dark:border-gray-700 py-8 bg-gray-100 dark:bg-gray-900">
+    <footer className="border-t border-neutral dark:border-gray-700 py-7 md:py-8 bg-gray-100 dark:bg-gray-900">
       <div className="container mx-auto px-4 text-base-content">
         <div className="flex flex-col lg:flex-row gap-8 text-center md:text-left">
           <div>
@@ -23,7 +23,7 @@ const Footer = () => {
             <p className="mb-2">Email: sheikhsaju1976@gmail.com</p>
             <p className="mb-2">Phone: +8801780710904</p>
             <p className="mb-2">
-              23/1 Maa, Palace, Zilla School Road, Mymensingh
+              23/1 Maa Palace, Zilla School Road, Mymensingh
             </p>
           </div>
         </div>
@@ -35,10 +35,10 @@ const Footer = () => {
           <p>
             Designed by{" "}
             <a
-              href="https://www.facebook.com/touristmomen"
-              className="text-primary dark:text-primary-light hover:underline"
+              href="https://www.facebook.com/khubaedsiam"
+              className="text-green-500 font-semibold dark:text-green-500 hover:underline"
             >
-              Momen
+              Siam
             </a>
           </p>
         </div>

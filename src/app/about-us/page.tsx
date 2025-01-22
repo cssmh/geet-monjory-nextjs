@@ -15,11 +15,11 @@ export default function AboutPage() {
           <h2 className="text-2xl md:text-3xl font-bold leading-tight text-white">
             About Geet Monjory
           </h2>
-          <p className="text-lg mt-4 text-white">
+          <p className="text-lg mt-3 md:mt-4 text-white">
             A journey of soulful music and heartfelt melodies.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
           <div className="space-y-6 text-white">
             <h3 className="text-2xl font-semibold mb-4">Who We Are</h3>
             <p className="leading-relaxed">
@@ -30,8 +30,7 @@ export default function AboutPage() {
               memories.
             </p>
           </div>
-
-          <div className="space-y-6 text-white">
+          <div className="space-y-4 md:space-y-6 text-white">
             <h3 className="text-2xl font-semibold mb-4">Our Mission</h3>
             <p className="leading-relaxed">
               To empower artists and listeners by creating a space where
@@ -40,8 +39,7 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
-
-        <div className="mt-12 text-center">
+        <div className="mt-7 md:mt-12 text-center">
           <h3 className="text-xl font-semibold mb-4 text-white">
             Join the Melody
           </h3>
@@ -51,7 +49,6 @@ export default function AboutPage() {
             community. Let&apos;s create magic together through the universal
             language of music.
           </p>
-
           <div className="mt-6">
             <a
               className="px-8 py-3 bg-violet-600 text-white hover:bg-violet-700 font-medium rounded-lg transition ease-in-out duration-300"

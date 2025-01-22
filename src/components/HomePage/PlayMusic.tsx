@@ -7,8 +7,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaPlay, FaPause, FaMusic } from "react-icons/fa";
 
-import { VelocityScroll } from "../ui/scroll-based-velocity";
-
+import Ripple from "../ui/ripple";
 const MusicPlayer = () => {
   const [selectedMusic, setSelectedMusic] = useState("/ami_parina.mp3");
   const [isPlaying, setIsPlaying] = useState(false);
@@ -45,7 +44,7 @@ const MusicPlayer = () => {
   if (!isMounted) return null;
 
   return (
-    <div className="flex flex-col md:flex-row gap-3 my-6">
+    <div className="flex flex-col-reverse md:flex-row gap-5 mt-6 mb-11">
       <div className="w-full md:w-1/2 shadow-md rounded-lg overflow-hidden">
         <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-3">
           <h2 className="text-lg md:text-2xl font-semibold flex items-center justify-center gap-2">
@@ -80,7 +79,7 @@ const MusicPlayer = () => {
             <audio ref={audioRef} src={selectedMusic} />
           )}
         </div>
-        <div className="px-3 pb-6">
+        <div className="px-3">
           <button
             className="w-full flex items-center justify-center gap-2 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300"
             onClick={handlePlayPause}
@@ -94,12 +93,13 @@ const MusicPlayer = () => {
           </button>
         </div>
       </div>
-      <div className="w-full md:w-1/2">
-        <VelocityScroll>
-          {selectedMusic === "/ami_parina.mp3"
-            ? "আমি পারিনা আর পারিনা আমি কেনো মরিনা আজরাইল কি চিনে না আমারে রে"
-            : "১২ মাসে ১২ ফুল রে ফুইট্টা থাকে ডালে রে এই পন্থে আইসে, নাগর পড়তি সন্ধ্যা  কালে রে দেখিতে সোনার নাগর গো চান্দের সমান"}
-        </VelocityScroll>
+      <div className="w-full px-1 md:px-0 md:w-1/2">
+        <div className="relative flex h-40 md:h-[250px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+          <p className="z-10 whitespace-pre-wrap text-center text-lg tracking-tighter text-gradient font-semibold">
+            Geet <br /> Monjory
+          </p>
+          <Ripple />
+        </div>
       </div>
     </div>
   );

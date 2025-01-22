@@ -12,7 +12,7 @@ export default function Monjory() {
           into timeless creations.
         </p>
       </div>
-      <div className="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div className="max-w-6xl mx-auto mt-6 lg:mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div>
           <h2 className="text-2xl text-[#9333ea] font-semibold mb-4">
             Meet Geet Monjory
@@ -34,7 +34,7 @@ export default function Monjory() {
           <div className="relative group">
             <Image
               alt="Book Cover 1"
-              className="rounded-lg h-96 w-2/3 md:h-full md:w-1/2 mx-auto shadow-lg transform group-hover:scale-105 transition-transform duration-300"
+              className="rounded-lg w-3/4 md:h-full md:w-1/2 mx-auto shadow-lg transform group-hover:scale-105 transition-transform duration-300"
               height={200}
               src={book}
               width={300}
@@ -43,7 +43,7 @@ export default function Monjory() {
           <div className="relative group">
             <Image
               alt="Book Cover 2"
-              className="rounded-lg h-96 w-2/3 md:h-full md:w-1/2 mx-auto shadow-lg transform group-hover:scale-105 transition-transform duration-300"
+              className="rounded-lg w-3/4 md:h-full md:w-1/2 mx-auto shadow-lg transform group-hover:scale-105 transition-transform duration-300"
               height={200}
               src={book1}
               width={300}
@@ -51,7 +51,7 @@ export default function Monjory() {
           </div>
         </div>
       </div>
-      <div className="mt-16 text-center">
+      <div className="mt-8 lg:mt-16 text-center">
         <h3 className="text-2xl font-semibold mb-4">
           Explore the Works of Geet Monjory
         </h3>

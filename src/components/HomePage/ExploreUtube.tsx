@@ -5,20 +5,20 @@
 import { motion } from "framer-motion";
 export default function ExploreUtube() {
   return (
-    <div className="mt-8 md:my-16 px-3 text-center">
+    <div className="md:mt-9 md:mb-16 text-center">
       <motion.div
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-2xl md:text-3xl font-extrabold mb-2">
+        <h1 className="text-2xl md:text-3xl font-semibold mb-2">
           Discover the Sound of Music
         </h1>
         <p className="text-md mb-6 md:mb-12 md:w-[70%] mx-auto">
           Immerse yourself in soulful tunes and captivating melodies that
           inspire, heal, and bring joy.
         </p>
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-3 md:gap-12">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-2 md:gap-12">
           <div className="w-full lg:w-1/3 rounded-lg shadow-lg p-5">
             <h2 className="text-2xl font-semibold text-center mb-3">
               Join the Melody

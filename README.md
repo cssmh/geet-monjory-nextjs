@@ -1,53 +1,53 @@
-# Next.js & HeroUI Template
+# Geet Monjory - Musician Website
 
-This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
+Welcome to **Geet Monjory**, a platform for soulful music and original compositions. Join us on this musical journey to explore melodies, connect with artists, and discover a vibrant music community.
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
+---
 
-## Technologies Used
+## 🎵 **About Geet Monjory**
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [HeroUI v2](https://heroui.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+Geet Monjory is a platform where music transcends boundaries. Our journey is fueled by passion, creativity, and a love for soulful melodies. Whether you're a fan of original compositions or collaborations, our music aims to evoke emotions and connect with people worldwide.
 
-## How to Use
+---
 
-### Use the template with create-next-app
+## 🚀 **Features**
 
-To create a new project based on this template using `create-next-app`, run the following command:
+- **Original Compositions & Collaborations**  
+  Enjoy exclusive tracks and collaborative pieces crafted with heart and soul.
 
-```bash
-npx create-next-app -e https://github.com/heroui-inc/next-app-template
-```
+- **Music Sharing Platform**  
+  A place for musicians to share their work and engage with fans globally.
 
-### Install dependencies
+- **Music Discovery**  
+  Discover new music that inspires, motivates, and brings a fresh perspective to the world of sound.
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+- **Join the Community**  
+  Whether you’re a listener or a musician, Geet Monjory welcomes you to join a growing community of music lovers.
 
-```bash
-npm install
-```
+---
 
-### Run the development server
+## 🎧 **Technologies Used**
 
-```bash
-npm run dev
-```
+This project uses a variety of modern web technologies to create a smooth, interactive, and visually appealing experience.
 
-### Setup pnpm (optional)
+### **Frontend:**
+- **React.js**  
+  A popular JavaScript library for building dynamic user interfaces.
+  
+- **Next.js**  
+  A framework for server-rendered React applications.
+  
+- **Tailwind CSS**  
+  A utility-first CSS framework for styling.
 
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+- **Framer Motion**  
+  For smooth animations and transitions.
+  
+- **Lucide React**  
+  A collection of minimal, customizable, and responsive icons for React.
 
-```bash
-public-hoist-pattern[]=*@heroui/*
-```
+- **React Icons**  
+  A set of customizable icons for React.
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
-
-## License
-
-Licensed under the [MIT license](https://github.com/heroui-inc/next-app-template/blob/main/LICENSE).
+- **Next Themes**  
+  For implementing light and dark modes.

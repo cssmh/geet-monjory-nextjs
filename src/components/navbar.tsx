@@ -101,12 +101,12 @@ export const Navbar = () => {
                 href={item.href}
                 size="lg"
                 className={clsx(
-                  "font-medium",
-                  index === 2
-                    ? "text-primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                      ? "text-danger"
-                      : "text-foreground"
+                  "font-medium"
+                  // index === 2
+                  //   ? "text-primary"
+                  //   : index === siteConfig.navMenuItems.length - 1
+                  //     ? "text-danger"
+                  //     : "text-foreground"
                 )}
               >
                 {item.label}

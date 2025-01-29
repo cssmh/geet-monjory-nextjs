@@ -1,13 +1,13 @@
 /* eslint-disable prettier/prettier */
 import Image from "next/image";
 
-import img1 from "@/src/assets/team.jpg";
+import img1 from "@/src/assets/laf.jpg";
 import img2 from "@/src/assets/band.jpg";
 import img3 from "@/src/assets/artist2.jpg";
 import img4 from "@/src/assets/bang2.jpg";
 
 const albums = [
-  { image: img1, name: "গ্রাফিটি আড্ডা" },
+  { image: img1, name: "লাফ!" },
   { image: img2, name: "আনন্দ মোহন ✌️" },
   { image: img3, name: "কালের সুতোয় জড়িয়ে-পেঁচিয়ে" },
   { image: img4, name: "নাছোড়বান্দা! ♥️" },

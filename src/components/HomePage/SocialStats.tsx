@@ -21,8 +21,8 @@ export default function SocialStats() {
             YouTube
           </h2>
           <div className="flex items-center text-3xl md:text-5xl font-semibold mb-2 md:mb-4">
-            <NumberTicker value={1290} />
-            <span>K</span>
+            <NumberTicker value={1200} />
+            <span>+</span>
           </div>
           <p className="text-lg text-center">Subscribers</p>
         </div>

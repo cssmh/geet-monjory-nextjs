@@ -10,8 +10,8 @@ export default function Home() {
       <GeetMonjory />
       <SocialStats />
       <MeetUs />
-      <ExploreUtube />
       <PlayMusic />
+      <ExploreUtube />
     </div>
   );
 }

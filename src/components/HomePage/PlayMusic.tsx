@@ -1,4 +1,6 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/jsx-sort-props */
 /* eslint-disable prettier/prettier */
 /* eslint-disable padding-line-between-statements */
@@ -6,11 +8,13 @@
 /* eslint-disable prettier/prettier */
 "use client";
 
+import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
 import { FaPlay, FaPause, FaMusic } from "react-icons/fa";
 
-import Music from "./Music.module.css";
+import geet from "@/src/assets/geet.jpg";
 
+import Music from "./Music.module.css";
 const MusicPlayer = () => {
   const [selectedMusic, setSelectedMusic] = useState("/ami_parina.mp3");
   const [isPlaying, setIsPlaying] = useState(false);
@@ -47,9 +51,7 @@ const MusicPlayer = () => {
   if (!isMounted) return null;
 
   return (
-    <div
-      className="mb-10 max-w-3xl mx-auto shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700"
-    >
+    <div className="max-w-5xl mx-auto shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 my-10">
       <div
         className={`${Music.mBtn} bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-3`}
       >
@@ -58,17 +60,50 @@ const MusicPlayer = () => {
           Music Player
         </h2>
       </div>
-      <div className="p-6 space-y-10">
+
+      <div className="p-6 flex flex-col space-y-6">
+        <div className="flex items-center justify-between space-x-4">
+          <Image
+            src={geet}
+            alt="Music cover"
+            width={90}
+            height={50}
+            className="w-16 h-12 object-cover rounded-lg"
+          />
+          <div className="flex flex-col justify-center">
+            <span className="text-lg font-semibold text-gray-800 dark:text-white">
+              {selectedMusic === "/ami_parina.mp3"
+                ? "Ami Parina"
+                : "Kotha Koiyo Na"}
+            </span>
+            <span className="text-sm text-gray-500 dark:text-gray-300">
+              Artist Name
+            </span>
+          </div>
+
+          <button
+            className="p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none"
+            onClick={handlePlayPause}
+          >
+            {isPlaying ? (
+              <FaPause className="text-lg" />
+            ) : (
+              <FaPlay className="text-lg" />
+            )}
+          </button>
+        </div>
+
+        {/* Music Select Dropdown */}
         <div>
           <label
-            className="block text-gray-700 dark:text-gray-300 font-medium mb-2"
             htmlFor="music-select"
+            className="block text-gray-700 dark:text-gray-300 font-medium mb-2"
           >
             Select Music
           </label>
           <select
-            className={`${Music.mBtn} w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm bg-white dark:bg-gray-800 focus:outline-none`}
             id="music-select"
+            className={`${Music.mBtn} w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm bg-white dark:bg-gray-800 focus:outline-none`}
             value={selectedMusic}
             onChange={handleMusicChange}
           >
@@ -83,17 +118,6 @@ const MusicPlayer = () => {
         ) : (
           <audio ref={audioRef} src={selectedMusic} className="w-full mt-2" />
         )}
-        <button
-          className={`w-full flex items-center justify-center gap-2 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300`}
-          onClick={handlePlayPause}
-        >
-          {isPlaying ? (
-            <FaPause className="text-lg" />
-          ) : (
-            <FaPlay className="text-lg" />
-          )}
-          {isPlaying ? "Pause" : "Play"}
-        </button>
       </div>
     </div>
   );

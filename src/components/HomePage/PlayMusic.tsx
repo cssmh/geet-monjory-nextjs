@@ -9,6 +9,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaPlay, FaPause, FaMusic } from "react-icons/fa";
 
+import Music from "./Music.module.css";
+
 const MusicPlayer = () => {
   const [selectedMusic, setSelectedMusic] = useState("/ami_parina.mp3");
   const [isPlaying, setIsPlaying] = useState(false);
@@ -45,14 +47,18 @@ const MusicPlayer = () => {
   if (!isMounted) return null;
 
   return (
-    <div className="my-10 shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
-      <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-3">
+    <div
+      className="mb-10 max-w-3xl mx-auto shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700"
+    >
+      <div
+        className={`${Music.mBtn} bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-3`}
+      >
         <h2 className="text-lg md:text-xl font-semibold flex items-center justify-center gap-2">
           <FaMusic className="text-xl" />
           Music Player
         </h2>
       </div>
-      <div className="p-6 space-y-5">
+      <div className="p-6 space-y-10">
         <div>
           <label
             className="block text-gray-700 dark:text-gray-300 font-medium mb-2"
@@ -61,7 +67,7 @@ const MusicPlayer = () => {
             Select Music
           </label>
           <select
-            className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm bg-white dark:bg-gray-800 focus:outline-none"
+            className={`${Music.mBtn} w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm bg-white dark:bg-gray-800 focus:outline-none`}
             id="music-select"
             value={selectedMusic}
             onChange={handleMusicChange}
@@ -77,9 +83,8 @@ const MusicPlayer = () => {
         ) : (
           <audio ref={audioRef} src={selectedMusic} className="w-full mt-2" />
         )}
-
         <button
-          className="w-full flex items-center justify-center gap-2 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300"
+          className={`w-full flex items-center justify-center gap-2 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300`}
           onClick={handlePlayPause}
         >
           {isPlaying ? (

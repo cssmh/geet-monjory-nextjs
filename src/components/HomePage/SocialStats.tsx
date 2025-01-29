@@ -2,7 +2,7 @@
 import NumberTicker from "../ui/number-ticker";
 export default function SocialStats() {
   return (
-    <div className="py-4 md:py-8 rounded-lg">
+    <div className="py-4 md:py-8 border-t rounded-lg">
       <h1 className="text-2xl md:text-3xl font-semibold text-center mb-3">
         Social Media Stats
       </h1>

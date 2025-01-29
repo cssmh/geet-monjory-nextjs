@@ -1,7 +1,6 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable react/self-closing-comp */
 "use client";
-
 import { motion } from "framer-motion";
 export default function ExploreUtube() {
   return (

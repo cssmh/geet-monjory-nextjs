@@ -39,12 +39,11 @@ export default function ExploreUtube() {
           <div className="w-full lg:w-2/3">
             <div className="relative pb-[56.25%] h-0 overflow-hidden border rounded-lg shadow-lg">
               <iframe
-                allowFullScreen
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 className="absolute top-0 left-0 w-full h-full"
                 frameBorder="0"
-                height="100%"
-                src="https://www.youtube.com/embed/7GeUVrDM-oY"
+                height="315"
+                src="https://www.youtube.com/embed/0ibCCxq6Zlc?si=nnkWzS7raXGl8qwF"
                 title="YouTube video player"
                 width="100%"
               ></iframe>

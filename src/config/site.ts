@@ -49,8 +49,8 @@ export const siteConfig = {
   ],
   links: {
     facebook: "https://www.facebook.com/saju1976",
-    twitter: "https://twitter.com/yourprofile",
-    instagram: "https://instagram.com/yourprofile",
+    twitter: "https://x.com/geetmonjory",
+    instagram: "https://instagram.com/geetmonjory",
     youtube: "https://www.youtube.com/@geetmonjory8955",
   },
 };

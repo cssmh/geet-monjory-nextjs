@@ -55,13 +55,12 @@ const MusicPlayer = () => {
       <div
         className={`${Music.mBtn} bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-3`}
       >
-        <h2 className="text-lg md:text-xl font-semibold flex items-center justify-center gap-2">
+        <h2 className="text-md md:text-xl font-semibold flex items-center justify-center gap-2">
           <FaMusic className="text-xl" />
           Music Player
         </h2>
       </div>
-
-      <div className="p-6 flex flex-col space-y-6">
+      <div className="p-3 md:p-6 flex flex-col space-y-6">
         <div className="flex items-center justify-between space-x-4">
           <Image
             src={geet}
@@ -80,7 +79,6 @@ const MusicPlayer = () => {
               Artist Name
             </span>
           </div>
-
           <button
             className="p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none"
             onClick={handlePlayPause}
@@ -92,7 +90,6 @@ const MusicPlayer = () => {
             )}
           </button>
         </div>
-
         {/* Music Select Dropdown */}
         <div>
           <label

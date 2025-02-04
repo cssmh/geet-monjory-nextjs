@@ -113,6 +113,37 @@ export const Navbar = () => {
               </Link>
             </NavbarMenuItem>
           ))}
+          {/* Social Media Links for Mobile */}
+          <div className="flex gap-3 mt-3">
+            <Link
+              isExternal
+              aria-label="Facebook"
+              href={siteConfig.links.facebook}
+            >
+              <FacebookIcon className="text-default-500 text-xl hover:text-blue-600 transition-colors duration-200" />
+            </Link>
+            <Link
+              isExternal
+              aria-label="YouTube"
+              href={siteConfig.links.youtube}
+            >
+              <YouTubeIcon className="text-default-500 text-2xl hover:text-red-500 transition-colors duration-200" />
+            </Link>
+            <Link
+              isExternal
+              aria-label="Instagram"
+              href={siteConfig.links.instagram}
+            >
+              <InstagramIcon className="text-default-500 text-2xl hover:text-pink-500 transition-colors duration-200" />
+            </Link>
+            <Link
+              isExternal
+              aria-label="Twitter"
+              href={siteConfig.links.twitter}
+            >
+              <TwitterIcon className="text-default-500 text-2xl hover:text-blue-500 transition-colors duration-200" />
+            </Link>
+          </div>
         </div>
       </NavbarMenu>
     </HeroUINavbar>

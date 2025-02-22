@@ -16,7 +16,7 @@ import geet from "@/src/assets/geet.jpg";
 
 import Music from "./Music.module.css";
 const MusicPlayer = () => {
-  const [selectedMusic, setSelectedMusic] = useState("/ami_parina.mp3");
+  const [selectedMusic, setSelectedMusic] = useState("/kotha_koiyo_na.mp3");
   const [isPlaying, setIsPlaying] = useState(false);
   const [error, setError] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
@@ -51,7 +51,7 @@ const MusicPlayer = () => {
   if (!isMounted) return null;
 
   return (
-    <div className="max-w-5xl mx-auto shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 my-10">
+    <div className="max-w-4xl mx-auto shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 my-10">
       <div
         className={`${Music.mBtn} bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-3`}
       >
@@ -104,8 +104,8 @@ const MusicPlayer = () => {
             value={selectedMusic}
             onChange={handleMusicChange}
           >
-            <option value="/ami_parina.mp3">Ami Parina</option>
             <option value="/kotha_koiyo_na.mp3">Kotha Koiyo Na</option>
+            <option value="/ami_parina.mp3">Ami Parina</option>
           </select>
         </div>
         {error ? (

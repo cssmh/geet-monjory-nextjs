@@ -1,11 +1,13 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable react/jsx-sort-props */
+/* eslint-disable prettier/prettier */
 import Image from "next/image";
 
 import singer from "@/src/assets/ath.jpg";
 import { title, subtitle } from "@/src/components/primitives";
 export default function GeetMonjory() {
   return (
-    <section className="flex flex-col min-h-[90vh] md:flex-row items-center justify-between gap-3 md:gap-8 py-7 md:py-10">
+    <section className="flex flex-col md:min-h-[90vh] md:flex-row items-center justify-between gap-3 md:gap-8 py-7 md:py-10">
       <div className="text-center md:text-left max-w-xl">
         <span className={title()}>Welcome to&nbsp;</span>
         <span className={title({ color: "violet" })}>
@@ -22,11 +24,11 @@ export default function GeetMonjory() {
       </div>
       <div className="mt-4 md:mt-0 w-full md:w-1/2">
         <Image
-          alt="Singer"
-          className="w-full rounded-lg shadow-lg"
-          height={200}
           src={singer}
+          alt="Singer"
           width={300}
+          height={200}
+          className="w-full rounded-lg shadow-lg"
         />
       </div>
     </section>

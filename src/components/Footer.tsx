@@ -36,9 +36,9 @@ const Footer = () => {
             Designed by{" "}
             <a
               href="https://www.facebook.com/khubaedsiam"
-              className="text-green-500 font-semibold dark:text-green-500 hover:underline"
+              className="text-green-400 underline font-semibold dark:text-green-500 hover:underline"
             >
-              Siam
+              Khubaed Islam Siam
             </a>
           </p>
         </div>

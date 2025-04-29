@@ -1,4 +1,6 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable react/jsx-sort-props */
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 import img1 from "@/src/assets/laf.jpg";
@@ -14,31 +16,75 @@ const albums = [
 ];
 
 export default function MeetUs() {
+  const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <section className="mb-5">
-      <div className="text-center">
-        <h2 className="text-3xl font-bold text-gradient">Meet Our Team</h2>
-        <p className="mt-4 text-base md:text-lg md:w-[60%] mx-auto text-gray-600 dark:text-white">
-          Get to know the talented team behind Geet Monjory&lsquo;s music, and
-          discover the amazing places we’ve visited that inspired our latest
-          releases.
-        </p>
-      </div>
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        {albums.map((album, index) => (
-          <div key={index} className="rounded-lg shadow-lg">
-            <div className="w-full h-56 relative overflow-hidden rounded-lg mb-4">
-              <Image
-                alt={`Album ${index + 1}`}
-                className="object-cover w-full h-full"
-                height={240}
-                src={album.image}
-                width={400}
-              />
-            </div>
-            <h3 className="text-sm text-center pb-3">{album.name}</h3>
-          </div>
-        ))}
+    <section className="py-5">
+      <div className="mx-auto max-w-7xl px-3 lg:px-8">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeIn}
+          className="text-center"
+        >
+          <motion.h2
+            variants={item}
+            className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white"
+          >
+            Meet Our Creative Team
+          </motion.h2>
+          <motion.p
+            variants={item}
+            className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 max-w-3xl mx-auto"
+          >
+            The talented individuals behind Geet Monjory&#39;s music, and the
+            inspiring places that shape our creative process.
+          </motion.p>
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeIn}
+          className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"
+        >
+          {albums.map((album, index) => (
+            <motion.div
+              key={index}
+              variants={item}
+              whileHover={{ y: -5 }}
+              className="group relative overflow-hidden rounded-md shadow-xl"
+            >
+              <div className="aspect-[10/5] w-full md:aspect-square">
+                <Image
+                  alt={`Album ${index + 1}`}
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  fill
+                  src={album.image}
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end p-2">
+                <h3 className="text-base font-semibold text-white">
+                  {album.name}
+                </h3>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );

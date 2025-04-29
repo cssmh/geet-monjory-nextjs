@@ -4,7 +4,7 @@
 import { motion } from "framer-motion";
 export default function ExploreUtube() {
   return (
-    <div className="md:mt-9 md:mb-16 text-center">
+    <div className="md:mt-9 mb-3 md:mb-16 text-center">
       <motion.div
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}

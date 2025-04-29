@@ -62,31 +62,27 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="flex items-center gap-3">
+        <NavbarItem className="flex items-center gap-4">
           <Link
             isExternal
             aria-label="Facebook"
             href={siteConfig.links.facebook}
           >
-            <FacebookIcon className="text-default-500 hover:text-blue-600 transition-colors duration-200" />
+            <FacebookIcon className="text-default-500 text-xl hover:text-blue-300 transition-colors duration-200" />
           </Link>
           <Link isExternal aria-label="YouTube" href={siteConfig.links.youtube}>
-            <YouTubeIcon className="text-default-500 text-xl hover:text-red-500 transition-colors duration-200" />
+            <YouTubeIcon className="text-default-500 text-2xl hover:text-red-400 transition-colors duration-200" />
           </Link>
           <Link
             isExternal
             aria-label="Instagram"
             href={siteConfig.links.instagram}
           >
-            <InstagramIcon className="text-default-500 text-lg hover:text-pink-500 transition-colors duration-200" />
-          </Link>
-          <Link isExternal aria-label="Twitter" href={siteConfig.links.twitter}>
-            <TwitterIcon className="text-default-500 hover:text-blue-500 transition-colors duration-200" />
+            <InstagramIcon className="text-default-500 text-2xl hover:text-pink-400 transition-colors duration-200" />
           </Link>
           <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
-
       {/* Mobile Menu */}
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <ThemeSwitch />

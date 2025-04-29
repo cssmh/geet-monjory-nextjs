@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 /* eslint-disable prettier/prettier */
 "use client"
 /* eslint-disable react/jsx-sort-props */
@@ -8,6 +9,7 @@ import GeetMonjory from "@/src/components/HomePage/GeetMonjory";
 import ExploreUtube from "@/src/components/HomePage/ExploreUtube";
 import PlayMusic from "@/src/components/HomePage/PlayMusic";
 import SocialStats from "@/src/components/HomePage/SocialStats";
+import ListenerReviews from "../components/HomePage/ListenerReviews";
 
 export default function Home() {
   const containerVariants = {
@@ -23,12 +25,13 @@ export default function Home() {
   return (
     <motion.div
       initial="hidden"
-      className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden"
+      className="mx-auto max-w-7xl 2xl:max-w-[86%] px-4 sm:px-6 lg:px-8 overflow-hidden"
       animate="visible"
       variants={containerVariants}
     >
       <GeetMonjory />
       <SocialStats />
+      <ListenerReviews />
       <MeetUs />
       <PlayMusic />
       <ExploreUtube />

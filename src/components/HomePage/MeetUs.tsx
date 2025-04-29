@@ -1,13 +1,11 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable react/jsx-sort-props */
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 import img1 from "@/src/assets/laf.jpg";
 import img2 from "@/src/assets/band.jpg";
 import img3 from "@/src/assets/artist2.jpg";
 import img4 from "@/src/assets/bang2.jpg";
-
 const albums = [
   { image: img1, name: "লাফ!" },
   { image: img2, name: "আনন্দ মোহন ✌️" },
@@ -16,63 +14,28 @@ const albums = [
 ];
 
 export default function MeetUs() {
-  const fadeIn = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
-
   return (
     <section className="py-5">
-      <div className="mx-auto max-w-7xl px-3 lg:px-8">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeIn}
-          className="text-center"
-        >
-          <motion.h2
-            variants={item}
-            className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white"
-          >
+      <div className="mx-auto max-w-7xl 2xl:max-w-[86%] px-1 lg:px-8">
+        <div className="text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
             Meet Our Creative Team
-          </motion.h2>
-          <motion.p
-            variants={item}
-            className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 max-w-3xl mx-auto"
-          >
+          </h2>
+          <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             The talented individuals behind Geet Monjory&#39;s music, and the
             inspiring places that shape our creative process.
-          </motion.p>
-        </motion.div>
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeIn}
-          className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"
-        >
+          </p>
+        </div>
+        <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {albums.map((album, index) => (
-            <motion.div
+            <div
               key={index}
-              variants={item}
-              whileHover={{ y: -5 }}
-              className="group relative overflow-hidden rounded-md shadow-xl"
+              className="group relative overflow-hidden rounded-sm md:rounded-md shadow-xl"
             >
               <div className="aspect-[10/5] w-full md:aspect-square">
                 <Image
                   alt={`Album ${index + 1}`}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="h-full w-full object-cover"
                   fill
                   src={album.image}
                 />
@@ -82,9 +45,9 @@ export default function MeetUs() {
                   {album.name}
                 </h3>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

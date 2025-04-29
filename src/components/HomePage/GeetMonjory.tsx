@@ -38,7 +38,7 @@ export default function GeetMonjory() {
             loop
             className="h-full rounded-md shadow-lg"
           >
-            {[singer, geetmonjory, gm, monjory, newImage].map(
+            {[geetmonjory, singer, gm, monjory, newImage].map(
               (img, idx) => (
                 <SwiperSlide key={idx}>
                   <div className="w-full h-[300px] md:h-[400px] relative rounded-md overflow-hidden">

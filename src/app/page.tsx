@@ -1,6 +1,6 @@
 /* eslint-disable import/order */
 /* eslint-disable prettier/prettier */
-"use client"
+"use client";
 /* eslint-disable react/jsx-sort-props */
 import { motion } from "framer-motion";
 
@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <motion.div
       initial="hidden"
-      className="mx-auto max-w-7xl 2xl:max-w-[86%] px-4 sm:px-6 lg:px-8 overflow-hidden"
+      className="mx-auto container px-4 sm:px-6 lg:px-8 overflow-hidden"
       animate="visible"
       variants={containerVariants}
     >

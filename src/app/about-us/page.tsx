@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-sort-props */
-/* eslint-disable prettier/prettier */ 
+/* eslint-disable prettier/prettier */
 "use client";
 import Link from "next/link";
 import { FaMusic, FaHeart, FaUsers, FaYoutube } from "react-icons/fa";
@@ -13,7 +13,7 @@ export default function AboutPage() {
 
   return (
     <div className="py-5 md:py-8 bg-gradient-to-b from-white to-violet-50 dark:from-gray-900 dark:to-gray-800">
-      <div className="max-w-7xl 2xl:max-w-[86%] mx-auto px-5">
+      <div className="container mx-auto px-5">
         {/* Header Section */}
         <motion.div
           initial="hidden"

@@ -1,31 +1,5 @@
-/* eslint-dconst albums = [
-  { 
-    image: img1, 
-    name: "লাফ!",
-    description: "A journey of joy and celebration",
-    category: "Album"
-  },
-  { 
-    image: img2, 
-    name: "আনন্দ মোহন ✌️",
-    description: "Spreading happiness through music",
-    category: "Single"
-  },
-  { 
-    image: img3, 
-    name: "কালের সুতোয় জড়িয়ে-পেঁচিয়ে",
-    description: "Woven through the threads of time",
-    category: "Album"
-  },
-  { 
-    image: img4, 
-    name: "নাছোড়বান্দা! ♥️",
-    description: "Never giving up on dreams",
-    category: "EP"
-  },
-]; prettier/prettier */
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/jsx-sort-props */
-"use client";
 import Image from "next/image";
 
 import img1 from "@/src/assets/laf.jpg";

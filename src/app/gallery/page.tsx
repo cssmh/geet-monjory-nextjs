@@ -47,7 +47,7 @@ export default function GalleryPage() {
   ];
   // eslint-disable-next-line padding-line-between-statements
   return (
-    <div className="max-w-7xl 2xl:max-w-[86%] mx-auto mt-2 mb-8 px-3">
+    <div className="container mx-auto mt-2 mb-8 px-3">
       <div className="columns-2 md:columns-3 lg:columns-4 gap-4">
         {images?.map((image, index) => (
           <div
